@@ -1,0 +1,140 @@
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Regular.ttf) format('woff2');
+}
+
+header{ 
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items: center;
+    height: 450px;
+    width: auto;
+    background-image: url('../img/bg-slider-06.jpg');
+    background-size: cover; 
+}
+header ul {
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none; 
+   padding: 0%; 
+ }
+ .menu{
+    display: flex;
+ }
+ header ul li {
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    text-decoration: none; 
+   padding: 2%; 
+}
+.resaux{
+    display:flex;
+    position: relative;
+    left: 40%;
+}
+.resaux il{
+    display:flex;
+    padding: 18%;
+}
+.logoresto{
+    position: relative;
+     display: flex;
+    right: 40%;
+
+}
+.titre{
+   
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none; 
+    padding: 0%;
+    flex-direction:column ;
+    margin-top: 10%;
+}
+.titre il{
+ padding: 3%;
+align-items: center;
+
+}
+.titre il h2{
+    font-style:italic
+   
+   }
+.titre il p{
+    font-size: x-small;
+   
+}
+.titre img{
+   width: 60%;
+   
+   }
+
+
+   /* <!--      partie        discover    our    store         //////////////////////////////////////////////////////////// --> */
+/*  la partie stephens chef cook////////////////////////////////// */
+
+.discoverourstore{
+    border-style: dashed ;
+    background-color: rgb(247, 238, 238);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 1%;
+    padding-left: 10%;
+}
+.discoverourstore ul{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 400px; 
+    position: relative;
+    top: 15%;
+}
+
+.discoverourstore ul il{
+    width: 50%;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+font-size: small; 
+margin: 1%;
+}
+
+ .discoverourstore ul il img{
+    width:25%;
+    justify-content: center;
+ }
+/*  la partie image plat////////////////////////////////// */
+
+.platdiscover {
+    background-image: url(/assets/img/store-01.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%; 
+    }
+/* toute la partie////////////////////////////////// */
+.discover{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 238, 238);
+    
+
+}
