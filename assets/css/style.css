@@ -1,14 +1,33 @@
-*{
+
+@font-face {
     font-family: 'Roboto';
+    src: url(../fonts/Poppins-Regular.ttf) ;
+
+    font-family:'Allura' ;   
+    src: url(../fonts/Allura/Allura-Regular.ttf) ;
+
+    font-family:'Poppins-ExtraBoldItalic' ;   
+    src: url(../fonts/Poppins-ExtraBoldItalic.ttf) ;
+
+    
+    font-family:'Poppins-Thin' ;   
+    src: url(../fonts/Poppins-Thin.ttf) ; 
+
+    font-family:'Poppins-black' ;   
+    src: url(../fonts/Poppins-Black.ttf) ;
+
+    font-family:'Poppins-Light' ;   
+    src: url(../fonts/Poppins-Light.ttf);
+
+}
+
+
+*{
+
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(../font/Roboto-Regular.ttf) format('woff2');
 }
 
 header{ 
@@ -16,10 +35,21 @@ header{
     flex-direction: column;
     justify-content:right;
     align-items: center;
-    height: 450px;
+    height: 655px;
     width: auto;
     background-image: url('../img/bg-slider-06.jpg');
     background-size: cover; 
+}
+header a{
+    color: #ffffff;
+}
+#barmenu1{
+    font-family:'Poppins-Thin'  ;
+    font-size: x-small;
+}
+#barmenu1 li{
+     margin: 7%;
+
 }
 header ul {
     position: relative;
@@ -28,10 +58,11 @@ header ul {
     justify-content:center;
     align-items: center;
     text-decoration: none; 
-   padding: 0%; 
+    padding: 0%; 
  }
  .menu{
     display: flex;
+    color: #ffffff;
  }
  header ul li {
     color: aliceblue;
@@ -43,7 +74,8 @@ header ul {
 .resaux{
     display:flex;
     position: relative;
-    left: 40%;
+    left: 120%;
+    font-size: x-small;
 }
 .resaux il{
     display:flex;
@@ -52,35 +84,64 @@ header ul {
 .logoresto{
     position: relative;
      display: flex;
-    right: 40%;
+    right: 120%;
+    color: #ffffff;
+    
+}
+.logoresto li{ 
+    font-family: 'Allura';
+    font-size: xx-large;
+    
 
 }
 .titre{
-   
-    color: aliceblue;
+    
     display: flex;
     justify-content:center;
     align-items: center;
     text-decoration: none; 
     padding: 0%;
     flex-direction:column ;
-    margin-top: 10%;
+    margin-top: 5%;
+    width: 40%;
+}
+.titre h2{    
+    font-family: 'Allura', cursive;
+    
 }
 .titre il{
- padding: 3%;
-align-items: center;
+    padding: 3%;
+    align-items: center;
 
 }
 .titre il h2{
-    font-style:italic
+    font-family: 'Allura', cursive;
+    font-size: 70px;
+    color: #d67c14;
+
    
    }
+   .titre il h1{
+    font-family: 'Poppins-ExtraBoldItalic', cursive;
+    font-size: 34px;
+    letter-spacing: 15px;
+    font-size: xx-large;
+    color: #ffffff;
+    width: 100%;
+   margin-top: -55px;
+   }
+ 
+
 .titre il p{
     font-size: x-small;
+    letter-spacing: 5px;
+
    
 }
 .titre img{
-   width: 60%;
+   background-size: cover; 
+
+   
    
    }
 
@@ -88,15 +149,20 @@ align-items: center;
    /* <!--      partie        discover    our    store         //////////////////////////////////////////////////////////// --> */
 /*  la partie stephens chef cook////////////////////////////////// */
 main{    background-color: rgb(41, 39, 39);
+
+}
+main h3{
+    font-size: 40px;
 }
 .discoverourstore{
     border-style: dashed ;
-    background-color: rgb(247, 238, 238);
+    background-color: rgb(255, 255, 255);
     justify-content: center;
     align-content: center;
     align-items: center;
     margin: 1%;
     padding-left: 10%;
+    width: 60%;
 }
 .discoverourstore ul{
     display: flex;
@@ -106,22 +172,31 @@ main{    background-color: rgb(41, 39, 39);
     position: relative;
     top: 15%;
 }
-
+.discoverourstoreimg1{
+    width: 8%;
+}
+.tetechefcook{
+    width: 25%;
+}
+#chefcook{
+    color: gray;
+}
 .discoverourstore ul il{
-    width: 50%;
+    width: 60%;
     text-align: center;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-font-size: small; 
-margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: small; 
+    margin: 1%;
 }
 
- .discoverourstore ul il img{
-    width:25%;
-    justify-content: center;
- }
-/*  la partie image plat////////////////////////////////// */
+#discoverourstoreh2{
+    font-family: 'Allura', cursive;
+    font-size: 24px;
+    color: #d67c14;
+    margin-bottom: -3%;
+}
 
 .platdiscover {
     background-image: url(../img/store-01.jpg); 
@@ -139,13 +214,20 @@ margin: 1%;
     
 
 }
-/* <!-- partie plat et resrevation -------------------------------------------------------------------> */
+/* <!-- /* image bg-menu-01 //////////////////////////////*/n -------------------------------------------------------------------> */
 .partireservation{
     background-color: rgb(41, 39, 39);
     width: 100%;
     height: 100%;
 
 }
+.reservation h3{
+margin-top: 35%;
+font-family: 'Allura', cursive;
+font-size: 64px;
+color: #d67c14;
+}
+
 .reservation{
     color: aliceblue;
     display: flex;
@@ -156,58 +238,189 @@ margin: 1%;
 .menureservation ul{
     display: flex;
     justify-content:center;
+    
 
 }
 .menureservation ul li{
-padding: 8%;    
+padding: 8%;  
+outline:none;  
 
 }
-/* image bg-menu-01 //////////////////////////////*/
+.menureservation ul li a{
+    color: aliceblue;
+  text-decoration:underline;  
+  
+}
+/* <!-- ///////////////////////////////////////////////////////parti table menu --> */
+.tablemenu{
+    border: #d67c14 solid 7px;
+    border-left-width : 0;   
+    border-right: 0;
+    border-bottom : 0;
+
+
+
+    background-color: #ffffff;
+    color: #000000;
+    position: absolute;
+}
+.tablemenu{
+    width: 60%;
+    height: 70vh;
+    color: #000000;
+    align-items: center;
+}
+.tablemenu img{
+    width:100% ;
+    height:100% ;
+    padding: 15%;
+}
+
+#lesingredients{
+padding-left: 15%;
+padding-right: 15%;
+padding-top: 11%;
+text-align: center;
+justify-content: center;
+}
+#prix{
+  
+    color: #d67c14;
+    padding-top: 11%;
+
+}
+
+.tablemenu1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: center;
+   
+
+}
+.tablemenu1 td {
+    text-align: center;
+    font-size: small;
+}
+
+
+
+
+
+/*/////////////////////// image  //////////////////////////////////////////////////////////*/
 .bg-menu {
     background-image: url('../img/bg-menu-01.jpg'); /* Remplace par le chemin de ton image */
     background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la section */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche l'image de se répéter */
     width: 100%;
-    height: 100vh; /* Définit la hauteur de la section (ici 100% de la hauteur de la fenêtre) */
-    margin-top: 2%;
+    height: 80vh; /* Définit la hauteur de la section (ici 100% de la hauteur de la fenêtre) */
+    margin-top: 10%;
 }
+
+/*/////////////////////////////////// la partie TIME OPEN */
 .bacgroundtimopen{
     background-color: black;
-    width: 100%;
- 
-
+    width: 45%;
+    padding: 1.5%;
+    margin-left: 20%;
 }
 .timeopen{
     border-style: dashed ;
     background-color: rgb(0, 0, 0);
     align-content: center;
-    margin: 1%;
     color: aliceblue;
     height: 100%;
+    font-size: x-small;
+    width: 100%;
+    justify-content: center;
+}
 
+.timeopen li{
+    margin: 5%;
 }
 
 
+.timeopen h2{
+    font-size: xx-large;
+
+}
+#timeopenligne{
+    border: #cf9a5d solid 10px;
+}
+
+#Time{   
+    font-family: 'Allura', cursive;
+    font-size: 50px;
+    color: #d67c14;
+
+}
+#MONDAY{
+    font-family: 'Roboto', cursive;
+    font-size: 24px;
+    color: #d67c14;
+    font-size: small;
+
+}
+#SATURDAY {
+    font-family: 'Roboto', cursive;
+    font-size: 24px;
+    color: #d67c14;
+    font-size: small;
+
+}
+hr{
+    border: none;
+    text-align: center;
+    height: 0.5px;
+    background-color: #d67c14;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8%;
+    margin-bottom: 3%;
+  }
+
+#numtele{
+    font-family: 'Allura', cursive;
+    font-size: 24px;
+    color: #d67c14;
+    font-size: large;
+    margin-bottom: 22%;
+
+}
+.resvationonline img{
+    width: 10%;
+}
 .resvationonline{            
     display: flex;
     flex-direction: row;
     text-align: center;  
-     width: 100%;
+    width: 100%;
     height: 100%;
-   
+    margin-top: 10%;   
 }
 /* la parti formulaire/////////////////////////////////////////////////////////////////////////////////// */
 .formulaire{
 
-        background-color:rgb(247, 244, 239);
-        display: flex;
-        flex-direction: column;
-        align-items: center;   
-        width: 100%;
-        height: 100%;
+    background-color:rgb(247, 244, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-right: 15%;
 }
+.formulaire img{
+    margin: 20%;
+}
+#liReservation{
+    margin-top: 35%;
+    font-family: 'Allura', cursive;
+    font-size: 34px;
+    color: #d67c14;
 
+}
 #people{
     font-size: 10px;
     border: none; /* Supprime la bordure */
@@ -259,11 +472,24 @@ padding: 8%;
     color: aliceblue;
     background-color: #000000;
    text-align: center;
-   border-radius: 20%;
-   margin-top: 16%;
+   border-radius: 15%;
+   margin-bottom: 50%;
+   padding: 2%;
+   width: 200px;
+   justify-content: center;
+   cursor: pointer; /* Curseur en forme de main */
+   transition: background-color 0.3s ease; /* Transition fluide sur hover */
+
 
 }
+.btn-booknow:hover {
+    background-color: #e5533d; /* Changer la couleur au survol */
 
+}
+.btn-booknow:active{
+    background-color: #6133cc; /* Couleur lorsqu'on clique */
+
+}
 #peopletime{
     display: flex;
     flex-direction: row;
@@ -273,8 +499,11 @@ padding: 8%;
 #nameemail {
     display: flex;
     flex-direction: row;
+    margin-bottom: 5%;
 
 }
+ 
+
 .formulaire il{
     margin: 1%;
 
@@ -289,7 +518,7 @@ padding: 8%;
 
 
 .discoverourgallery{   
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -302,10 +531,16 @@ padding: 8%;
     color: aliceblue;
   }
   .titreourgallery li {
-    margin: 2px ;
+    
     text-align: center;
+    
 
   }
+ #lidiscover{
+        font-family: 'Allura', cursive;
+        font-size: 64px;
+        color: #d67c14;
+    } 
   
   #imgopen img {
   width: 20px; 
@@ -319,14 +554,14 @@ padding: 8%;
 }
   
 .imagourgallery1  li {
-    width: 200px; /* Taille de chaque image */ 
-    height: 200px;
+    width: 250px; /* Taille de chaque image */ 
+    height: 250px;
     background-size: cover;
     background-position: center;
 }
 .ourgallery2 li {
-    width: 200px; 
-    height: 200px;
+    width: 250px; 
+    height: 250px;
     background-size: cover;
     background-position: center;
 }
@@ -348,7 +583,7 @@ padding: 8%;
     background-image: url(../img/dish-gallery-05.jpg);
 }
 #img6{
-    background-image: url(../img/dish-gallery-01.jpg);
+    background-image: url(../img/dish-gallery-06.jpg);
 }
 .discoverourgallery .viewallgallery {
 
@@ -377,68 +612,148 @@ padding: 8%;
         text-align: center;
 
     }
-    .ourevent img{
-        text-align: center;
-        color: aliceblue;
-        width: 555px;
-        height: 444px;
+    .UPcoming{font-family: 'Allura', cursive;
+        font-size: 64px;
+        color: #d67c14;
     }
-    .ourevent li
-    {
-        width: 555px; /* Taille de chaque image */ 
-        height: 100px;
-        background-size: cover;
-        background-position: center;
-    }
+/*  <!-- UPcoming OUR EVENT////////////////////////////////////////////////// -->/////////////////////////////////////// */
+/* event1////////////////////////////////////////// */
+
+.parti1ourevent{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+#imagourevent1{
+    background-image: url(../img/event-01.jpg);
+    background-size: cover;
+    width: 220px;
+    height: 100%;
+}
+.event1-1 { 
+    height: 50%;
+    color: #000000;
+    text-align: left;
+    padding-left: 2%;
+
     
-    .event1 ul{ 
-        display: flex;
-        flex-direction: row;
     
-    }
-    #imagourevent1{ 
-        background-image: url(../img/event-01.jpg);
-    }
     
-    #imagourevent2{ 
-        background-image: url(../img/event-02.jpg);
+}
+.event1 {
+    display: flex;
+    background-color: #f9f9f9;
+    margin-bottom: 7%;
+    height: 150px;
 
-    }
-    #imagourevent3{ 
-        background-image: url(../img/event-03.jpg);
-       
-    }
-    #tableimagourevent1{
-        background-color: aliceblue;
-        color: #000000;
 
-    }
-    .ourevent{
 
-        display: flex;
-        justify-items: center;
+}
+.event1 p{
+    padding: 5%;
+    font-size: large;
+    font-family:'Roboto' ; 
+    
+}
 
-    }
+/* event2////////////////////////////////////////// */
+.event2{
+ display: flex;
+ background-color: #f9f9f9;
+
+}
+#imagourevent2{
+    background-image: url(../img/event-02.jpg);
+    background-size: cover;
+    width: 220px;
+    height:150px;
+}
+.vent2-2  { 
+    background-color: #f9f9f9;
+    width: 350px;
+    height: 50px;
+    color: #000000;
+    text-align: left;
+    padding: 2%;
+}
+.vent2-2 p{
+    font-family: 'Poppins-Light';
+              padding: 5%;
+ }
+ #textRestaurant{
+color: gray;
+}
+
+
+/* event3////////////////////////////////////////// */
+
+
+.partiourevent3 {
+    font-family: 'Poppins-Light',  cursive;
+    font-size: xx-large;
+    color: #000000;
+    width: 100%; /* Occupe toute la largeur disponible */
+    height: 270px ;
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: url(../img/event-03.jpg);
+    padding: 10%;
+    background-size: cover;
+    margin-left: 5%;
+}
+.vent3  {
+    padding: 20px; 
+   
+    height:90%;
+    border-style:dashed; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+}
+.vent3 p {
+    margin: 5%;
+    text-align: center;
+}
+
+
+.ourevent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+   
+}
+
+
+    
     /* <!--- PARTI TEMOIGNAGE --------------------------------------------------------------------> */
-    .partitemoignage{
-        margin-top: 10%;
-        background-color: rgb(249, 247, 245);
-        color: #000000;
-        text-align: center;
-       align-items: center;
-        width: 100%; 
-        height: 300px;
-        position: relative;
+.partitemoignagegps{
+    margin-top: 10%;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    width: 100%; 
+    height: 300px;
+    position: relative;
+     bottom: 55%;
+        
     }
       
+    .partitemoignage{
+        margin-left:20% ;
+        margin-right: 20%;
+        
+        background-color: rgb(249, 247, 245);
+        position: absolute;
+        height:322px ;
+    }
     #imgchef img{
         border:0cm ;
         border-radius: 50%;
         position: absolute;
-        margin-top: -60px;
-        width: 10%;
+        width: 10%;        
+        transform:translate(-50%,-50%);
     }
-    .partitemoignage p{
+    .partitemoignagegps p{
         text-align: center;
         padding: 75px;
 
@@ -447,3 +762,159 @@ padding: 8%;
         text-align: center;
         margin-top: 10%;
     }
+    iframe{
+        height: 300px;
+        margin-top: 15%;
+    }
+    /* <!--//////////////////////////////////// parti footer //////////////////////////////////////////--> */
+  /* <!--//////////////////////////////////// parti footer1 //////////////////////////////////////////--> */
+    footer{ 
+        color :beige;
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: x-small;
+        font-family: 'Poppins-Thin';
+
+    }
+    .footer1{ 
+        background-color: black;
+        width: 60%;
+       
+    }
+    .footer1 p{
+        width: 50%;
+        padding-left: 30%;
+        padding-bottom: 0%;
+        font-size: medium;
+        font-family: 'Poppins-Thin', cursive;
+    }
+    .footer1 h4{
+        width: 10%;
+        padding-left: 30%;
+        padding-top: 15%;
+        margin: 3%;
+        font-family: 'Allura', cursive;
+        font-size: 40px;
+        color: #d67c14;
+    }
+   
+
+    footer p,h5{
+
+       margin-bottom: 5%;
+    }
+      /* <!--//////////////////////////////////// parti footer2 //////////////////////////////////////////--> */
+
+      .footer2{
+        background-color: #272626;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: x-small;
+        margin-top: 3%;
+    }
+    #youremail{
+        margin-top: 10%;
+        width: 50%;
+    }
+    .follow{
+        display: flex;
+        align-items: center;
+        margin-top:5% ;
+        width: 50%;
+    }
+    .follow il{
+        display: flex;
+       
+        margin-top:5% ;
+        margin: 4%;
+    }
+    #nameemail2{
+        background-color: #272626;
+        padding: 3%;
+        margin-top: 3%;
+        border: #ffffff solid 0.5px;
+        width: 60%;
+    }
+
+       
+/* Styles spécifiques pour les grands écrans desktop (à partir de 1200px) */
+@media screen and ( max-width: 900px) {
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    body ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulaire{
+
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: center;
+        width: 50%;
+        height: 50%;
+        margin-right: 5%;
+    }
+    #nameemail {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    #peopletime{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+    .btn-booknow{
+        width: 50px;
+    }
+    .imagourgallery1  li {
+        width: 80px; /* Taille de chaque image */ 
+    }
+    .ourevent{
+        display: flex;
+        flex-direction: column;
+    }
+    .ourgallery2 li {
+        width: 80px; 
+    }
+    .partiourevent3{
+        width: 50%;
+    }
+}
+
+
+
+@media screen and ( max-width: 700px) {
+
+    .partiourevent3{
+        width: 50%;
+    }
+}
+
+@media screen and ( max-width: 400px) {
+
+    .resvationonline{
+        display: flex;
+        flex-direction: column;
+}
+.formulaire{
+ width:50% ;
+}
+}
+@media screen and ( max-width: 400px) {
+
+   
+}
+.formulaire{
+ width:40% ;
+}
